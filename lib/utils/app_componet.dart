@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 
 
 List<String> sliderImage = <String>[
-  "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-  "https://cdn.pixabay.com/photo/2013/07/18/10/56/railroad-163518__340.jpg",
-  "https://cdn.pixabay.com/photo/2016/10/18/21/28/seljalandsfoss-1751463__340.jpg",
-  "https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287__340.jpg",
-  "https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg",
+  "https://avatars.mds.yandex.net/i?id=01b5fc00cc792151af2d65feb0243e328d86559c-5273666-images-thumbs&n=13",
+  "https://avatars.mds.yandex.net/i?id=0d01d0d09acdbe98cc11764520558fd479bc9b46-8527116-images-thumbs&n=13",
+  "https://avatars.mds.yandex.net/i?id=32e68afc43bc406cb3a3c6af176a2b192d5c6108-5231707-images-thumbs&n=13",
+  "https://avatars.mds.yandex.net/i?id=43a1730defefea6bd841ecbcc0a2459d2ff4b9d4-8187038-images-thumbs&n=13",
+  "https://avatars.mds.yandex.net/i?id=259e742693ab9410cd7142f5f16ec448d33380c2-8484366-images-thumbs&n=13",
   "https://cdn.pixabay.com/photo/2013/11/28/10/03/river-219972__340.jpg",
   "https://cdn.pixabay.com/photo/2017/10/10/07/48/hills-2836301_960_720.jpg",
 ];

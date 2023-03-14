@@ -1,10 +1,7 @@
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pr_7_1/screens/quotes_screen.dart';
-
-
 import '../utils/app_componet.dart';
 import '../utils/widgets.dart';
 import 'category_screen.dart';
@@ -18,6 +15,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
+
   @override
   void initState() {
     super.initState();
@@ -28,7 +27,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    // Size size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
         body: Column(
@@ -42,9 +40,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:  [
-                  const Icon(Icons.menu),
-                  // SizedBox(width: 15),
+                children: [
+                  Icon(Icons.menu),
                   const Flexible(
                       child: Text(
                     "Life Quotes And Sayings",
@@ -55,9 +52,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(width: 15),
                   InkWell(
                     onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => const LikeQuoteScreen()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const LikeQuoteScreen()));
                     },
-                    child: Image.asset("assets/images/heart.png",scale: 20),
+                    child: Image.asset("assets/images/heart.png", scale: 20),
                   )
                 ],
               ),
@@ -244,7 +242,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               size: size,
                               image: "assets/images/category/Datting.jpg",
                               onTap: () {
-
                                 Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) =>
                                       QuotesScreen(category: "Dating"),
@@ -288,47 +285,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               }),
                         ],
                       ),
-                      const SizedBox(height: 30),
-                      const Text(
-                        "Featured",
-                        style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.black,
-                            fontWeight: FontWeight.w500),
-                      ),
-                      const SizedBox(height: 15),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          featured(
-                              color: categoryColors[2],
-                              text: "Short\nQuotes",
-                              alignment: Alignment.center,
-                              size: size),
-                          featured(
-                              color: categoryColors[4],
-                              text: "Proverbs",
-                              alignment: Alignment.centerLeft,
-                              size: size),
-                        ],
-                      ),
-                      const SizedBox(height: 20),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          featured(
-                              color: categoryColors[5],
-                              text: "Entrepreneur\nQuotes",
-                              alignment: Alignment.center,
-                              size: size),
-                          featured(
-                              color: categoryColors[8],
-                              text: "Top\nQuotes",
-                              alignment: Alignment.center,
-                              size: size),
-                        ],
-                      ),
-                      const SizedBox(height: 30)
                     ],
                   ),
                 ),
